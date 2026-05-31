@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love the Philippines</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<div id="recipeModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeRecipe()">&times;</span>
+
+        <h2 id="recipeTitle"></h2>
+
+        <div id="recipeContent"></div>
+
+    </div>
+</div>
+
+<div id="activityModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeActivity()">&times;</span>
+
+        <h2 id="activityTitle"></h2>
+
+        <div id="activityContent"></div>
+
+    </div>
+
+</div>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Welcome to Philippines
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="travel-guide.html">Travel Guide</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Experience the Beauty of the Philippines</h1>
+
+            <p>
+                Discover breathtaking islands, vibrant culture,
+                delicious cuisine, and unforgettable adventures.
+            </p>
+
+            <a href="#featured" class="btn">
+                Explore Now
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED DESTINATIONS -->
+
+    <section id="featured" class="section">
+
+        <h2 class="title">
+            Featured Destinations
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="images/palawan.jpg" alt="">
+                <h3>Palawan</h3>
+                <p>Crystal-clear waters and island hopping adventures.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/boracay.jpg" alt="">
+                <h3>Boracay</h3>
+                <p>Home of the world-famous White Beach.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/baguio.jpg" alt="">
+                <h3>Baguio</h3>
+                <p>The Summer Capital of the Philippines.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ACTIVITIES -->
+
+    <section class="section pink">
+
+        <h2 class="title">
+            Popular Activities
+        </h2>
+
+        <div class="activities">
+
+    <div class="activity-box" onclick="showActivity('island')">
+        <i class="fa-solid fa-ship"></i>
+        <h3>Island Hopping</h3>
+    </div>
+
+    <div class="activity-box" onclick="showActivity('hiking')">
+        <i class="fa-solid fa-mountain"></i>
+        <h3>Hiking</h3>
+    </div>
+
+    <div class="activity-box" onclick="showActivity('sightseeing')">
+        <i class="fa-solid fa-camera"></i>
+        <h3>Sightseeing</h3>
+    </div>
+
+    <div class="activity-box" onclick="showActivity('food')">
+        <i class="fa-solid fa-utensils"></i>
+        <h3>Food Tours</h3>
+    </div>
+
+</div>
+
+    </section>
+
+    <!-- CUISINE -->
+
+    <section class="section">
+
+        <h2 class="title">
+            Filipino Cuisine
+        </h2>
+
+        <div class="cards">
+
+    <div class="card" onclick="showRecipe('adobo')">
+        <img src="images/adobo.jpg" alt="">
+        <h3>Adobo</h3>
+    </div>
+
+    <div class="card" onclick="showRecipe('sinigang')">
+        <img src="images/sinigang.jpg" alt="">
+        <h3>Sinigang</h3>
+    </div>
+
+    <div class="card" onclick="showRecipe('halohalo')">
+        <img src="images/halohalo.jpg" alt="">
+        <h3>Halo-Halo</h3>
+    </div>
+
+</div>
+
+    </section>
+
+    <!-- WHY VISIT -->
+
+    <section class="section pink">
+
+        <h2 class="title">
+            Why Visit the Philippines?
+        </h2>
+
+        <div class="activities">
+
+            <div class="activity-box">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <h3>Beautiful Beaches</h3>
+            </div>
+
+            <div class="activity-box">
+                <i class="fa-solid fa-landmark"></i>
+                <h3>Rich Culture</h3>
+            </div>
+
+            <div class="activity-box">
+                <i class="fa-solid fa-plane"></i>
+                <h3>Adventure</h3>
+            </div>
+
+            <div class="activity-box">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Warm Hospitality</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>It's More Fun in the Philippines!</h3>
+
+        <p>
+            ALLIAH CASSANDRA I. DANIEL | BSIT 3A
+        </p>
+
+    </footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
